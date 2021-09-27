@@ -1,4 +1,17 @@
-<template></template>
+<template>
+  <div>
+    <list-item
+      v-for="item in items"
+      :key="item.id"
+      :first_name="item.first_name"
+      :id="item.id"
+      :last_name="item.last_name"
+      :email="item.email"
+      :gender="item.gender"
+      :ip_address="item.ip_address"
+    ></list-item>
+  </div>
+</template>
 
 <script>
 import ListItem from "@/components/ListItem";
